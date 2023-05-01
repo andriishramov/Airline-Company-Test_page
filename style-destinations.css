@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Gill Sans MT";
+}
+
+body::after {
+  content: "";
+  background-image: url("./images/destinations/clouds-and-sky-see-from-plane-windows-free-video.jpg");
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  font-size: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 9999;
+  transition: all 0.7s ease;
+}
+header .logo img {
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+  opacity: 80%;
+  border-radius: 50%;
+}
+header nav {
+  padding: 10px;
+  height: 90px;
+  display: flex;
+  margin-left: 30%;
+  width: 90%;
+  float: right;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 70%;
+}
+header nav ul li {
+  width: 25%;
+}
+header nav ul li a {
+  color: #0B1B48;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+header nav ul li a:hover {
+  color: #1b67a8;
+}
+
+header.out {
+  transform: translateY(-100%);
+}
+
+h1 {
+  margin-top: 200px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: lighter;
+}
+
+section {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+section div.destination-cards {
+  background-color: white;
+  display: flex;
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 20px 2px grey;
+  margin-bottom: 20px;
+  transition: transform 0.5s;
+}
+section div.destination-cards img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+section div.destination-cards .destination-cards-description {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  justify-content: center;
+}
+section div.destination-cards .destination-cards-description p.price {
+  padding-top: 10px;
+  font-size: 15px;
+}
+section div.destination-cards .destination-cards-description p.price span {
+  color: #0B1B48;
+  font-family: "Brush Script MT";
+  font-size: 30px;
+}
+
+div.destination-cards:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  color: #0B1B48;
+  background-color: rgba(155, 155, 155, 0.5);
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+footer div.footer-company-description {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 20px;
+  text-align: center;
+}
+footer div.footer-company-description:nth-child(2) {
+  text-align: right;
+  width: 20%;
+}
+footer ul li {
+  padding: 20px;
+}
+footer div.map-address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  width: 250px;
+  height: 150px;
+  margin-right: 40px;
+}
+footer div.map-address iframe {
+  width: 240px;
+  height: 140px;
+  border: none;
+}
+
+/*# sourceMappingURL=style-destinations.css.map */

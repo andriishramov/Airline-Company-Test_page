@@ -1,0 +1,116 @@
+main {
+  display: flex;
+}
+main img {
+  width: 1300px;
+  height: 1000px;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  position: relative;
+  margin-left: 100px;
+}
+main div {
+  display: flex;
+  text-indent: 2px;
+  align-items: center;
+  font-size: 14px;
+  height: fit-content;
+}
+main div .dots {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #0B1B48;
+  animation: pulse 2s ease-in-out infinite;
+  position: relative;
+}
+main div .dots:hover {
+  cursor: pointer;
+}
+main div #tickets {
+  letter-spacing: 2px;
+  position: relative;
+  top: -120px;
+  left: 10px;
+  transform: translateX(-50%);
+  display: none;
+  background-color: white;
+  box-shadow: 0px 0px 10px 1px grey;
+  border-radius: 10px;
+  padding: 5px;
+}
+main div #tickets img {
+  width: 150px;
+  height: 150px;
+  margin: 0;
+  border-radius: 10px;
+}
+main div #tickets div {
+  width: 150px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main #london {
+  position: relative;
+  top: 620px;
+  right: 922px;
+}
+main #madeira {
+  position: relative;
+  top: 1065px;
+  right: 1310px;
+}
+main #berlin {
+  position: relative;
+  top: 600px;
+  right: 861px;
+}
+main #rome {
+  position: relative;
+  top: 850px;
+  right: 860px;
+}
+main #paris {
+  position: relative;
+  top: 700px;
+  right: 1070px;
+}
+main #oslo {
+  position: relative;
+  top: 446px;
+  right: 981px;
+}
+main #palma {
+  position: relative;
+  top: 905px;
+  right: 1159px;
+}
+main #malta {
+  position: relative;
+  top: 990px;
+  right: 1007px;
+}
+main #reykjavik {
+  position: relative;
+  top: 345px;
+  right: 1615px;
+}
+main #antalya {
+  position: relative;
+  top: 965px;
+  right: 814px;
+}
+main #athens {
+  position: relative;
+  top: 945px;
+  right: 998px;
+}
+main #salzburg {
+  position: relative;
+  top: 710px;
+  right: 1249px;
+}
+
+/*# sourceMappingURL=style-map.css.map */

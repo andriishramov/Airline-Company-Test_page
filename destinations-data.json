@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "city": "London",
+    "price": 50,
+    "img": "./images/city-cards/london.jpg"
+  },
+  {
+    "id": 2,
+    "city": "Madeira",
+    "price": 100,
+    "img": "./images/city-cards/madeira.jpg"
+
+  },
+  {
+    "id": 3,
+    "city": "Rome",
+    "price": 60,
+    "img": "./images/city-cards/rome.jpg"
+  },
+  {
+    "id": 4,
+    "city": "Berlin",
+    "price": 40,
+    "img": "./images/city-cards/berlin.jpg"
+  },
+  {
+    "id": 5,
+    "city": "Paris",
+    "price": 55,
+    "img": "./images/city-cards/paris.jpg"
+  },
+  {
+    "id": 6,
+    "city": "Oslo",
+    "price": 30,
+    "img": "./images/city-cards/oslo.jpg"
+  },
+  {
+    "id": 7,
+    "city": "Palma de Mallorca",
+    "price": 80,
+    "img": "./images/city-cards/palma.jpg"
+  },
+  {
+    "id": 8,
+    "city": "Malta",
+    "price": 65,
+    "img": "./images/city-cards/malta.jpg"
+  },
+  {
+    "id": 9,
+    "city": "Reykjavik",
+    "price": 200,
+    "img": "./images/city-cards/reykjavik.jpg"
+  },
+  {
+    "id": 10,
+    "city": "Antalya",
+    "price": 50,
+    "img": "./images/city-cards/antalya.jpg"
+  },
+  {
+    "id": 11,
+    "city": "Athens",
+    "price": 85,
+    "img": "./images/city-cards/athens.jpg"
+  },
+  {
+    "id": 12,
+    "city": "Salzburg",
+    "price": 150,
+    "img": "./images/city-cards/salzburg.jpg"
+  }
+]

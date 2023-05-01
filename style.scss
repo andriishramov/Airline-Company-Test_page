@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: "Gill Sans MT";
+}
+header {
+  display: flex;
+  font-size: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 9999;
+  transition: all .7s ease;
+  .logo img {
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    opacity: 80%;
+    border-radius: 50%;
+  }
+  nav {
+    padding: 10px;
+    height: 90px;
+    display: flex;
+    margin-left: 30%;
+    width: 90%;
+    float: right;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      width: 70%;
+      li {
+        width: 25%;
+        a {
+          color: #0B1B48;
+          text-decoration: none;
+          transition: all 0.3s ease;
+
+          &:hover {
+            color: #1b67a8;
+          }
+        }
+      }
+    }
+  }
+}
+header.out {
+  transform: translateY(-100%);
+}
+
+.start-image {
+    width: 100%;
+    opacity: 90%;
+    background-image: url("images/background/hand-holding-passport-on-the-world-map-background-with-model-airplane-travel-concept-selective-focus-free-photo.jpg");
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  .start-description {
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    width: 500px;
+    height: 400px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    letter-spacing: 3px;
+    font-size: 40px;
+    color: white;
+    background-color: rgba(255,255,255,0.24);
+    padding: 20px;
+    transition: letter-spacing 0.9s ease-in-out;
+  }
+}
+section {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  h1 {
+    margin: auto;
+    padding: 100px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: lighter;
+  }
+  .carousel.loaded {
+    opacity: 1;
+  }
+  .carousel{
+    font-family: Centaur;
+    letter-spacing: 2px;
+    font-size: 20px;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    overflow: hidden;
+    margin-bottom: 200px;
+    opacity: 0; /* set initial opacity to 0 */
+    transition: opacity 1s ease-in-out;
+    .carousel-items {
+      display: flex;
+      width: calc(100% * 2);
+      transition: transform 0.5s ease-in-out;
+      .city-cards {
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 0px 10px 1px grey;
+        border-radius: 10px;
+        margin: 20px;
+        transition: transform 0.5s;
+        .city-card-img {
+          width: 100%;
+          box-sizing: border-box;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+        .city {
+          font-weight: bold;
+        }
+      }
+      .city-cards:hover {
+        transform:scale(1.05);
+      }
+    }
+    .carousel-prev{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 100%;
+      background-color: #fff;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      left: -10px;
+      transition: opacity 0.9s ease-out;
+      opacity: 0;
+      img {
+        width: 20px;
+        height: 50px;
+      }
+    }
+    .carousel-prev:hover {
+      opacity: 50%;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .carousel-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 100%;
+      background-color: #fff;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      right: 0;
+      transition: opacity 0.5s ease-in-out;
+      opacity: 0;
+      img {
+        width: 20px;
+        height: 50px;
+      }
+    }
+    .carousel-next:hover {
+      opacity: 50%;
+      transition: opacity 0.5s ease-in-out;
+    }
+  }
+}
+section.is-visible {
+  opacity: 1;
+}
+section.navigation {
+  margin-bottom: 200px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  div {
+    letter-spacing: 3px;
+    display: flex;
+    height: 300px;
+    justify-content: end;
+    align-items: end;
+    background-color: rgba(2,16,129,0.84);
+    font-size: 30px;
+    color: white;
+  }
+  #map {
+    p{
+      position: absolute;
+      padding: 10px;
+      z-index: 2;
+      transition: transform 0.5s;
+    }
+    span{
+      width: 100%;
+      height: 100%;
+      background-image: url("./images/map/map.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.4;
+      transition: opacity 0.5s;
+    }
+    span:hover {
+      opacity: 0.3;
+      transition: opacity 0.5s ease-in-out;
+    }
+  }
+  #destinations {
+    p{
+      position: absolute;
+      padding: 10px;
+      z-index: 2;
+      transition: transform 0.5s;
+    }
+    span{
+      width: 100%;
+      height: 100%;
+      background-image: url("./images/destinations/clouds-and-sky-see-from-plane-windows-free-video.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.4;
+      transition: opacity 0.5s;
+    }
+    span:hover {
+      opacity: 0.6;
+      transition: opacity 0.5s ease-in-out;
+    }
+  }
+
+  #car-hire {
+    p {
+      position: absolute;
+      padding: 10px;
+      z-index: 2;
+      transition: transform 0.5s;
+    }
+
+    span {
+      width: 100%;
+      height: 100%;
+      background-image: url("./images/car hire/Car-Hire-Eldoret-Rentals.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.4;
+      transition: opacity 0.5s;
+    }
+
+    span:hover {
+      opacity: 0.6;
+      transition: opacity 0.5s ease-in-out;
+    }
+  }
+  #contact {
+    p {
+      position: absolute;
+      padding: 10px;
+      z-index: 2;
+      transition: transform 0.5s;
+    }
+
+    span {
+      width: 100%;
+      height: 100%;
+      background-image: url("./images/contact/photo-1423666639041-f56000c27a9a.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.4;
+      transition: opacity 0.5s;
+    }
+
+    span:hover {
+      opacity: 0.6;
+      transition: opacity 0.5s ease-in-out;
+    }
+  }
+
+  div:hover {
+    cursor: pointer;
+    p{
+      transform: scale(0.9);
+    }
+  }
+}
+section.navigation.is-visible {
+  opacity: 1;
+}
+footer {
+  color: #0B1B48;
+  background-color: rgba(155,155,155,0.5);
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  div.footer-company-description {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+  }
+  div.footer-company-description:nth-child(2){
+    text-align: right;
+    width: 20%;
+  }
+  ul {
+    li {
+      padding: 20px;}
+  }
+  div.map-address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    width: 250px;
+    height: 150px;
+    margin-right: 40px;
+    iframe {
+      width: 240px;
+      height: 140px;
+      border: none;
+    }
+  }
+}
